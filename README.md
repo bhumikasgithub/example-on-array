@@ -1,0 +1,28 @@
+<h2>example on array</h2>
+<label>Enter Number</label>
+
+<input type="text" id="txtNum" > &nbsp;&nbsp;
+<button onclick="addItems()">Add Ele</button> &nbsp;&nbsp;
+<button onclick="showItems()">Show Else</button><br><br>
+<output id="dat"> </output> <bR> </bR>
+<output id="result"> </output>
+<script>
+    var data = [];
+    var i=0;
+    function addItem()
+    {
+        data[i] = parseInt( txtNum.value);
+        i++;
+        txtNum.value="";
+        txtNum.focus();
+    }
+    function showItems()
+    {
+        let total=0;
+        for(let j=0; j<data.length; j++)
+        
+        total+=data[j];
+    data.value=data;
+    result.value="Sum of Array Elements : "+total;
+    }
+</script>
